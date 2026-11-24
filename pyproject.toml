@@ -7,7 +7,7 @@ name = "ragscope"
 dynamic = ["version"]
 description = "See inside your RAG pipeline: which chunks were retrieved, which the answer used, and which claims aren't supported."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Your Name" }]
 keywords = ["rag", "llm", "retrieval", "hallucination", "debugging", "observability", "evaluation"]
@@ -30,8 +30,8 @@ dev = ["pytest>=7", "ruff>=0.4"]
 ragscope = "ragscope.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/manish2021iitd/ragscope"
-Issues = "https://github.com/manish2021iitd/ragscope/issues"
+Homepage = "https://github.com/manish2021iitd/RagScope"
+Issues = "https://github.com/manish2021iitd/RagScope/issues"
 
 [tool.hatch.version]
 path = "ragscope/__init__.py"
@@ -41,7 +41,7 @@ include = ["ragscope", "tests", "examples", "README.md", "LICENSE"]
 
 [tool.ruff]
 line-length = 110
-target-version = "py39"
+target-version = "py310"
 
 [tool.pytest.ini_options]
 addopts = "-q --doctest-modules"
@@ -49,4 +49,4 @@ testpaths = ["tests", "ragscope"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "B", "I"]
-ignore = ["E501"]  # long lines live in the embedded HTML/CSS template
+ignore = ["E501", "B905"]  # long lines live in the embedded HTML/CSS template
