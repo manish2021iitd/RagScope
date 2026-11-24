@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+ragscope_demo/
+ragscope_report.html
+ragscope_traces.jsonl
+toy_traces.jsonl
+*.html
+!ragscope/**/*.html
