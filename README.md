@@ -1,5 +1,7 @@
 # ragscope
 
+[![CI](https://github.com/manish2021iitd/RagScope/actions/workflows/ci.yml/badge.svg)](https://github.com/manish2021iitd/RagScope/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.10%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green) 
+
 **See inside your RAG pipeline.** For every question, ragscope shows which chunks were retrieved and why, which of them the answer actually used, and which claims in the answer **aren't supported by any retrieved chunk**.
 
 ![ragscope HTML report](docs/screenshot.png)
